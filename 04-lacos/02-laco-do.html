@@ -6,11 +6,23 @@
 	<title>Laço de repetição DO</title>
 </head>
 <body>
-	<h1>Laço de repetição DO</h1>
+	<h1>Laço de repetição WHILE</h1>
 	<p id="tabuada"></p>
 
 	<script type="text/javascript">
-		
+		// Criando as variáveis
+		var num = 5;
+		var cont = 1;
+		var resposta ='';
+
+		// Criando  a tabuada
+		while(cont <= 10){
+			resposta += num + ' x '+ cont + ' = ' + (num*cont) + '<br>';
+			cont++;
+		}
+
+		// Mostrando a tabuada
+		document.getElementById('tabuada').innerHTML = resposta;
 	</script>
 
 </body>

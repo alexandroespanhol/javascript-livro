@@ -10,7 +10,19 @@
 	<p id="teste">O total de vendas foi: </p>
 
 	<script type="text/javascript">
-		
+		var cont = 1;
+		var total = 0;
+		var venda = 0;
+		var fim = 0;
+
+		// Solicitar ao usuario a quantidades de vendas do dia
+		for(cont = 1; cont <= fim; cont++){
+			venda = parseFloat(prompt('Digite o valor da ' + cont + 'a venda',''));
+			total = total + venda;
+		}
+
+		// Mostrando o resultado
+		document.getElementById('teste').innerHTML += total;
 	</script>
 
 </body>

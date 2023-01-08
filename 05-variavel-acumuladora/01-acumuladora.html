@@ -10,7 +10,23 @@
 	<p id="teste">A soma de todos os números é: </p>
 
 	<script type="text/javascript">
-		
+	// Crindo as variáveis
+	var cont = 1;
+	var total = 0;
+	var venda = 0;
+	var fim	= 0;
+	
+	//Solicitar ao usuário a quatidadede vendas do dia
+	fim = parseFloat(prompt('Digite a quatidade de vendas',''));
+
+	// Criando o laço de repetição
+	for(cont = 1; cont <= fim; cont++){
+		venda = parseFloat(prompt('Digite o valor da ' + cont + 'a venda',''));
+		total = total + venda;	
+	}
+	//Mostrado o resultado
+	document.getElementById('teste').innerHTML += total;
+
 	</script>
 
 </body>

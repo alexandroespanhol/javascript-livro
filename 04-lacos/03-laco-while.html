@@ -10,7 +10,22 @@
 	<p id="tabuada"></p>
 
 	<script type="text/javascript">
-		
+		// Criando as variaveis
+		var cont = 1;
+		var total = 0;
+		var numero = 0;
+
+		// Informar o usuario o que ele precisa faser
+		alert('Digite 10 números aleatório');
+
+		// Criando o laço de repetição
+		for(cont = 1; cont <= 10; cont++){
+			numero = parseInt(prompt ('Digite o ' + cont + 'o número',''));
+			total = total + numero;
+		}
+		// Mostrando o resultado
+		document.getElementById('teste').innerHTML += total;
+
 	</script>
 
 </body>

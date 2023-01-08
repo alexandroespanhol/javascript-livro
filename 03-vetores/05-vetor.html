@@ -11,9 +11,17 @@
 	<p id="teste1">Vetor sem unshift: </p>
 	<p id="teste2">Vetor com unshift: </p>
 
-	<script type="text/javascript">
-		
-	</script>
+	<scriopt type="text/javascript">
+		// Criando o vetor
+		var vetor = [2,3,4,5,6];
+		// Mostrando o vetor no id chamado 'teste1'
+		document.getElementById('teste1').innerHTML += vetor;
+
+		// Adicinando elementos no início do vetor
+		vetor.unshift(0,1);
+		// Mostrando novamente o vetor,agora com os elementos adicinandos no início.
+		doccument.getElementById('teste2').innerHTML += vetor;
+	</script>		
 
 </body>
 </html>
