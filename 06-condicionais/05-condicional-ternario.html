@@ -10,7 +10,19 @@
 	<p id="teste"></p>
 
 	<script type="text/javascript">
-		
+		//Criando as variáveis
+		var media = 6;
+		var resultado ='';
+
+		//Condicional ternária
+		resultado = (media >= 7)?'Aprovado(a)':
+					(media >= 6)?'Recuperação': 
+					'Reprovado(a)';
+
+					//Mostrando o resultado
+					document.getElementById('teste').innerHTML = resultado;
+					
+
 	</script>
 </body>
 </html>

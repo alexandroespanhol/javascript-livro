@@ -9,7 +9,36 @@
 	<h1>Função com parâmetros</h1>
 	<p id="teste">O resultado é: </p>
 
-	<script src="05-funcao-com-parametros.js"></script>
+	<script src="05-funcao-com-parametros.js">
+	//Declando a função
+	function Media(a, b, c, d){
+		var media = (a+ b+ c+ d) / 4;
+		if(media >= 7){
+			return 'aprovado (a) com media: ' + media;
+		}
+		else{
+			return 'reprovado (a)com media: '+  media
+	}	
+}
+//Criando as variaveis
+var nome = '';
+var nota1 = 0, nota2 = 0, nota3 = 0, nota4 = 0;
+
+// Solicitando ao usuario o nome do(a) aluno(a)
+nome = prompt('Digite o nome do(a) aluno(a)','');
+//Mensagem para o usuario
+alert('informe as 4 notas do (a) aluno(a)');
+//Solicitando a notas do usuario
+nota1 = parseFloat(prompt('Digiti a primira nota',''));
+nota2 = parseFloat(prompt('Digite a segunda nota',''));
+nota3 = parseFloat(prompt('Digita a terceira nota',''));
+nota4 = parseFloat(prompt('Digite a quarta nota',''));
+
+//Mostrando o resultado
+document.getElementById('teste').innerHTML += 'O(a) aluno(a) ' + 
+nome + ' esta ' + Media(nota1, nota2, nota3, nota4);
+_ 
+	</script>
 
 </body>
 </html>

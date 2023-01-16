@@ -33,6 +33,20 @@
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 	<script type="text/javascript">
+		//Declarando a função
+		function chamaDOM(id){
+			//Criando a variavel
+			var elemento = '';
+
+			elemento = document.getElementById(id);
+			if(elemento.className == 'primeira'){
+				elemento.className = 'segunda';
+			}
+				else{
+			elemento.className = 'primeira';
+
+				}
+			}
 		
 	</script>
 </body>

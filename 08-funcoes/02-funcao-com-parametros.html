@@ -9,7 +9,22 @@
 	<h1>Função com parâmetros</h1>
 	<p id="teste">A soma dos números é: </p>
 
-	<script src="02-funcao-com-parametros.js"></script>
+	<script src="02-funcao-com-parametros.js">
+//Declarando a função
+function Soma(a, b){
+	return a + b;
+}
+//Declarando as variáveis
+var num1 = 0, num2 = 0;
+
+//Solicitando os valores para o usuário
+num1 = parseInt(prompt('Digite um numero',''));
+num2 = parseInt(prompt('Digite outro numero',''));
+
+//Mostrando o resultado na tela
+document.getElementById('teste').innerHTML += Soma(num1, num2); 
+
+</script>
 
 </body>
 </html>
