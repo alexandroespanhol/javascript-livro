@@ -31,7 +31,24 @@
 
 
 	<script type="text/javascript">
-		
+	//Declarando a função
+	function Anima(){
+		var elemento = document.getElementById('bola');
+	    var posição = 0;
+	    var id = setInterval(Local, 5);
+	    //Declarando a fução Local
+	    function Local()
+	    if (posição == 350){
+		     clearInterval(id);
+	    }
+	    else{
+		    posição++;
+		    elemento.style.top = posição + 'px';
+		    elemento.style.left = posição + 'px';
+
+		}
+	}
+
 	</script>
 </body>
 </html>

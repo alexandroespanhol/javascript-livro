@@ -14,7 +14,17 @@
 	</ul>
 
 	<script type="text/javascript">
-		
+//Criar elemento li com texto Terceiro
+ var novoLI = document.createElement('li');
+var textoLi = document.createTextNode('Terceiro');
+novoLI.appendChild(textoLi);
+
+//Buscar a lista na página
+var lista = document.getElementsByTagName('u')[0];
+//Recuperar os itens
+var itens = document.getElementsByTagName('li');
+// inserindo com insertBefore()-antes
+lista.insertBefore(novoLI,itens[2]);
 	</script>
 </body>
 </html>

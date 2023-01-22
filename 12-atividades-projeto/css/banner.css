@@ -1,3 +1,22 @@
+// Javascript para o banner rotativo
+var img = new Array('1','2','3');
+var indice = 0;
+setinterval('trocaBanner()',3000);
+function trocaBanner(i){
+	if(i == 0 || i == 1 || i == 2){
+		indice = i;
+	} else {
+		if (indece == img.lenght - 1){
+			indece = 0;
+		} else{
+			indece++;
+	    }
+	}
+	document.getElementByld('banner_img_1').setAttribute('class', '');
+	document.getElementByld('banner_img_2').setAttribute('class','');
+	document.getElementByld('banner_img_3').setAttribute('class','');
+	document.getElementByld('banner_img_').innerHTML = '<img src = "img/foto' + img[indice] + 'jpg" alt="Banner"title = "Banner">';
+}
 body{
 	margin: 0;
 	padding: 0;

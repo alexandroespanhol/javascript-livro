@@ -14,7 +14,24 @@
 	</ul>
 
 	<script type="text/javascript">
-		
+		//Declarando a função
+		function CriarElemento(tag,txt){
+	
+			var elemento = document.createElement(tag);
+			var texto = document.createTextNode(txt);
+			elemento.appendChild(texto);
+			return elemento;
+		}
+		//Criando os elementos
+		var li1 = CriarElemento('li', 'Primeiro');
+		var li2 = CriarElemento('li', 'Segundo');
+
+		//Buscando lista
+		var lista = document.getElementsByName('u')[0];
+
+		//Inserindo os elementos
+		lista.insertBefore(li2, itens[0]);
+		lista.insertBefore(li1, itens[0]);
 	</script>
 </body>
 </html>

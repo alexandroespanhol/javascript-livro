@@ -72,6 +72,45 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
+	$(document).ready(function(){
+		//Limpar os campos de erroassim que tiver texto
+		$('#nome,#email,#mensagem').keydown(function(){
+			$('.erro1').text('');
+			$('.erro2').text('');
+		});
+
+		//Ao clicar no botão salvar obtém-se os campos
+		$('#salvar').click(function(){
+			var nome = $('#nome');
+			var email = $('#email');
+			var mensagem = $('#mensagem');
+
+			//Verifica se o campo nome está vazio
+			if(!nome.val() && !email.val() && !mensagem.val()){
+				$('#erroNome').text('Campo obrigatório!');
+				nome.focus();
+		}
+		else if(!nome.val()){
+			//Verifica se o campo nome está vazio
+			$('#erroNome').text('Campo obrigatorio!');
+			nome.focus();
+		} else if(!email.val()){
+			//Verifica se o campo email está vazil
+			$('#erroEmail').text('Campo obrigatorio!');
+			email.focus();
+			} else if(!mensagem.val()){
+				//Verifica se o campo está vazil
+				$('#erroMensagem').text('Campo obrigatorio!');
+				mensagem.focus(); 
+			} else{
+				//Valida os campos
+				$('#nome').after('',null);
+				$('#email').after('',null);
+				$('mensagem').after('',null);
+				$('#form1').submit();
+			}
+		});
+	});
 		
 	</script>
 
